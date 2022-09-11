@@ -42,7 +42,7 @@ func (block *Block) calcHash() {
 		data = append(data, Uint64ToByte(block.TimeStamp)...)
 		data = append(data, Uint64ToByte(block.Difficulty)...)
 		data = append(data, Uint64ToByte(block.Nonce)...)
-		data = append(data, block.Data...)*/
+		data = append(data, block.transactions...)*/
 
 	data := bytes.Join([][]byte{
 		Uint64ToByte(block.Version),
