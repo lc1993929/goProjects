@@ -5,7 +5,9 @@ import (
 	"crypto/sha256"
 	"encoding/binary"
 	"encoding/hex"
+	"encoding/json"
 	"fmt"
+	"log"
 	"time"
 )
 
@@ -67,6 +69,21 @@ func (block *Block) toString() {
 	fmt.Println("随机数：", block.Nonce)
 	fmt.Println("当前区块hash：", hex.EncodeToString(block.Hash))
 	fmt.Println("区块数据：", string(block.Data))
+}
+
+func (block *Block) toByte() []byte {
+	marshal, err := json.Marshal(block)
+	if err != nil {
+		log.Panic(err)
+	}
+	return marshal
+}
+
+func (block *Block) fromByte(data []byte) {
+	err := json.Unmarshal(data, block)
+	if err != nil {
+		log.Panic(err)
+	}
 }
 
 // NewBlock 创建区块
