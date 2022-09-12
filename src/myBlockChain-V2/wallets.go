@@ -10,13 +10,14 @@ import (
 
 type Wallets struct {
 	//	map[地址]钱包
-	WalletMap map[string]Wallet
+	WalletMap map[string]*Wallet
 }
 
 const walletFile = "wallet.dat"
+const initAddress = "1CxcCDwRd59aEtevgb9DPaBfJrabyYrmeE"
 
 func NewWallets() Wallets {
-	wallets := Wallets{WalletMap: map[string]Wallet{}}
+	wallets := Wallets{WalletMap: map[string]*Wallet{}}
 	wallets.loadFile()
 
 	return wallets
@@ -25,7 +26,7 @@ func NewWallets() Wallets {
 func (ws *Wallets) CreateWallet() string {
 	wallet := NewWallet()
 	address := wallet.NewAddress()
-	ws.WalletMap[address] = wallet
+	ws.WalletMap[address] = &wallet
 
 	ws.saveToFile()
 	return address
@@ -35,7 +36,7 @@ func (ws *Wallets) saveToFile() {
 
 	var buffer bytes.Buffer
 
-	//gob.RegisterName("crypto/elliptic.p256Curve", elliptic.P256())
+	//注意：此处如果用go1.19.1有bug，p256无法注册成功
 	gob.Register(elliptic.P256())
 	encoder := gob.NewEncoder(&buffer)
 	err := encoder.Encode(*ws)

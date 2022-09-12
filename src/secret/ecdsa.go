@@ -155,7 +155,7 @@ func verifyEccSign2(src []byte, fileName string, signature []byte) bool {
 		panic(err)
 	}
 	var r, s big.Int
-	r.SetBytes(signature[:len(signature)/2-1])
+	r.SetBytes(signature[:len(signature)/2])
 	s.SetBytes(signature[len(signature)/2:])
 	return ecdsa.Verify(publicKey, sum256[:], &r, &s)
 }
