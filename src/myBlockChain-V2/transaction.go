@@ -15,6 +15,16 @@ import (
 
 const reward = 12.5
 
+/*
+1、output生成时会记录收款方的公钥hash
+2、input生成时会根据所在交易的outputs和关联的以前区块的output中记录的公钥hash值用私钥计算出一个签名
+3、矿工在生成新的区块的时候需要先验证签名是否正确才能新增区块
+	3.1、验证签名时会根据input所在交易的outputs和关联的以前区块的output中的公钥hash计算出一个hash值
+	3.2、使用3.1中计算出来的hash和input中记录的公钥和签名进行验签
+
+因为input生成签名时使用了指定的以前区块的output的交易id和index，所以不会造成解锁到错误的output的情况
+*/
+
 // Transaction 交易
 type Transaction struct {
 	//交易id
