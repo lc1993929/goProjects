@@ -165,7 +165,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/lottery.sol": "lottery"
+			"src/lottery/src/contracts/lottery.sol": "lottery"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -176,10 +176,10 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/lottery.sol": {
-			"keccak256": "0x4826fea152ef2502958c7237588ce084bde23f54b08dbc2df35f32f380aba441",
+		"src/lottery/src/contracts/lottery.sol": {
+			"keccak256": "0x64453c246ccd7427b8852b502d043e5745cdb27dd4751d3c68c53356240bb5e5",
 			"urls": [
-				"bzzr://dd51e30101236de0b58d2a2d4298052d8694ede44dc5c03ca6fa68558695c102"
+				"bzzr://e7d77dc753fdbc160b0cf17fc5f428fb2273cd73a7624e51da0936b258fd6b75"
 			]
 		}
 	},

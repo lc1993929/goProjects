@@ -193,7 +193,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"zombies/zombiefeeding.sol": "ZombieFeeding"
+			"src/zombies/zombiefeeding.sol": "ZombieFeeding"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -204,25 +204,25 @@
 		"remappings": []
 	},
 	"sources": {
-		"zombies/ownable.sol": {
+		"src/zombies/ownable.sol": {
 			"keccak256": "0x21d6433bf1ea1d4d1a7d4c031a4285138da063aed90cea614c1ebe15cf40c994",
 			"urls": [
 				"bzzr://9daf4631d19f4a284517fc6543ad17dedd8752157cbffd8582feabb21ec9887d"
 			]
 		},
-		"zombies/safemath.sol": {
+		"src/zombies/safemath.sol": {
 			"keccak256": "0x9ec2b3d0cea706c23e1375c7866f4d032a9c422711d912e0cbf21423d10d94f2",
 			"urls": [
 				"bzzr://b007a1efea71aaf3f3350bdfd60ece25ff3f51b820adde8e83a54bab8be61b80"
 			]
 		},
-		"zombies/zombiefactory.sol": {
+		"src/zombies/zombiefactory.sol": {
 			"keccak256": "0x6ba6c801c3302af5a7cbbe1d4c9756952bdf61ae9eb3937eb236f38c6e3695b6",
 			"urls": [
 				"bzzr://ab9624b21ee7dfb7b2f0f4bf024d9da0cf05d15d3e043ab71c6c1fe59ad91a45"
 			]
 		},
-		"zombies/zombiefeeding.sol": {
+		"src/zombies/zombiefeeding.sol": {
 			"keccak256": "0x7716f92ecf295f7af3ab59b1547e16e3144c6e3fcd24271b62df7e953b759d7c",
 			"urls": [
 				"bzzr://f4fbde61c6b43b93c3f615b8f00beb0ca8469b765a683b48a01b0b65102c2e0f"

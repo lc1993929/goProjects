@@ -74,7 +74,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"zombies/ownable.sol": "Ownable"
+			"src/zombies/ownable.sol": "Ownable"
 		},
 		"evmVersion": "byzantium",
 		"libraries": {},
@@ -85,7 +85,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"zombies/ownable.sol": {
+		"src/zombies/ownable.sol": {
 			"keccak256": "0x21d6433bf1ea1d4d1a7d4c031a4285138da063aed90cea614c1ebe15cf40c994",
 			"urls": [
 				"bzzr://9daf4631d19f4a284517fc6543ad17dedd8752157cbffd8582feabb21ec9887d"
