@@ -1,3 +1,6 @@
+# 如果跑不起来，请检查一下合约地址的配置
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
