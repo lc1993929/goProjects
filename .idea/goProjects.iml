@@ -8,6 +8,13 @@
       <excludeFolder url="file://$MODULE_DIR$/src/funding/.idea" />
       <excludeFolder url="file://$MODULE_DIR$/src/lottery/.idea/jsLinters" />
       <excludeFolder url="file://$MODULE_DIR$/src/truffleReact/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src/firstHardHat/.idea" />
+      <excludeFolder url="file://$MODULE_DIR$/src/firstHardHat/artifacts" />
+      <excludeFolder url="file://$MODULE_DIR$/src/firstHardHat/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/src/myOracleDemo/contracts/artifacts" />
+      <excludeFolder url="file://$MODULE_DIR$/src/myOracleDemo/artifacts" />
+      <excludeFolder url="file://$MODULE_DIR$/src/myOracleDemo/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/src/truffleReact/client/src/contracts" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
